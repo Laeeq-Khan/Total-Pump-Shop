@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="668.0" prefWidth="1100.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="totaltuckshop.Accounts.AccountsallProductsController">
+   <children>
+      <Label layoutX="84.0" layoutY="24.0" text="View All Products">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TableView fx:id="product_table" layoutX="61.0" layoutY="179.0" prefHeight="408.0" prefWidth="961.0">
+         <columns>
+            <TableColumn fx:id="code_column" minWidth="0.0" prefWidth="0.0" text="Code" />
+            <TableColumn fx:id="name_column" prefWidth="170.0" text="Name" />
+            <TableColumn fx:id="purchase_column" prefWidth="165.0" text="Purchase Price" />
+            <TableColumn fx:id="sale_column" prefWidth="138.0" text="Sale Price" />
+            <TableColumn fx:id="entry_date_column" prefWidth="106.0" text="Entry Date" />
+            <TableColumn fx:id="detailsColumn" prefWidth="432.0" text="Details" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="search_field" focusColor="#ffcc00" layoutX="243.0" layoutY="142.0" prefHeight="25.0" prefWidth="277.0" />
+      <Label layoutX="102.0" layoutY="146.0" text="Search Product" />
+      <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="201.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/searchifon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="66.0" layoutX="25.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/viewAll.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="total_products_label" layoutX="418.0" layoutY="594.0" text="Total Products : 0" />
+   </children>
+</AnchorPane>

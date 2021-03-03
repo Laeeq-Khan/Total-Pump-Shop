@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="homeAnchor" prefHeight="640.0" prefWidth="1100.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="totaltuckshop.HomeController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="466.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/total.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label1" layoutX="143.0" layoutY="375.0" minHeight="16" minWidth="69" prefHeight="42.0" prefWidth="114.0" text="Today Sale" textFill="RED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label11" layoutX="163.0" layoutY="417.0" minHeight="16" minWidth="69" prefHeight="42.0" prefWidth="114.0" text="0.0" textFill="#686868">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="375.0" layoutY="331.0" stroke="BLACK" strokeType="INSIDE" width="1.0" />
+      <Label fx:id="label12" layoutX="485.0" layoutY="375.0" minHeight="16" minWidth="69" prefHeight="42.0" prefWidth="114.0" text="Time" textFill="RED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeLabel" layoutX="455.0" layoutY="417.0" minHeight="16" minWidth="69" prefHeight="42.0" prefWidth="203.0" text="7:18:00 PM" textFill="#686868">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label121" layoutX="898.0" layoutY="375.0" minHeight="16" minWidth="69" prefHeight="42.0" prefWidth="114.0" text="Date" textFill="RED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1111" layoutX="867.0" layoutY="417.0" minHeight="16" minWidth="69" prefHeight="42.0" prefWidth="114.0" text="30-07-2019" textFill="#686868">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="723.0" layoutY="331.0" stroke="BLACK" strokeType="INSIDE" width="1.0" />
+      <Label fx:id="label" layoutX="350.0" layoutY="20.0" minHeight="16" minWidth="69" prefHeight="42.0" prefWidth="400.0" text="Welcome to Total Tuck Shop" textFill="RED">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="567.0" text="Software Developer : Laeeq Khan ,   Contact : 0305-5466154 ,  0311-0747574 ,  Email: laiqkhan0000@gmail.com" />
+   </children>
+</AnchorPane>

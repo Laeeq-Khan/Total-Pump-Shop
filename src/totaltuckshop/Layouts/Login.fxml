@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="561.0" prefWidth="493.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="totaltuckshop.Login_Controller">
+   <children>
+      <ImageView fitHeight="270.0" fitWidth="228.0" layoutX="139.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/total.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutY="278.0" prefHeight="306.0" prefWidth="506.0" style="-fx-background-color: #191970;">
+         <children>
+            <Label layoutX="86.0" layoutY="14.0" prefHeight="27.0" prefWidth="361.0" text="Total Tuck Shop Management System" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="36.0" fitWidth="32.0" layoutX="92.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/username.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="56.0" layoutX="80.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/passowrd.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="username_Field" focusColor="#ffac05" layoutX="146.0" layoutY="102.0" prefHeight="25.0" prefWidth="225.0" style="-fx-text-fill: white;" unFocusColor="WHITE" />
+            <JFXPasswordField fx:id="password_Field" focusColor="#ffc004" layoutX="146.0" layoutY="141.0" prefHeight="25.0" prefWidth="225.0" style="-fx-text-fill: white;" unFocusColor="WHITE" />
+            <JFXButton fx:id="login_Button" layoutX="222.0" layoutY="199.0" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: gray;" text="Login" textFill="WHITE" />
+            <Label layoutX="212.0" layoutY="41.0" prefHeight="27.0" prefWidth="82.0" text="Mianwali" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="246.0" prefHeight="27.0" prefWidth="393.0" text="Software Developer Laeeq Khan : Contact: 0305-5466154, 0311-0747574" textFill="WHITE" />
+            <Label layoutX="155.0" layoutY="267.0" prefHeight="27.0" prefWidth="176.0" text="Email: laiqkhan0000@gmail.com" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

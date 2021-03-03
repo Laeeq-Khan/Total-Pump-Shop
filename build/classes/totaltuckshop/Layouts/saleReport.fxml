@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="1100.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="totaltuckshop.Billing.SaleReportController">
+   <children>
+      <Label fx:id="label111" layoutX="107.0" layoutY="33.0" minHeight="16" minWidth="69" prefHeight="42.0" prefWidth="490.0" text="Get Sale Report by any Day/month/ Year" textFill="#686868">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="64.0" layoutX="34.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/purchaseHistoryicon.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="fromDate" layoutX="300.0" layoutY="120.0" />
+      <DatePicker fx:id="toDate" layoutX="560.0" layoutY="120.0" />
+      <Label layoutX="235.0" layoutY="124.0" text="From">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="516.0" layoutY="124.0" text="To">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="showButton" layoutX="766.0" layoutY="120.0" mnemonicParsing="false" text="Show" />
+      <TableView fx:id="saleTable" layoutX="58.0" layoutY="151.0" prefHeight="452.0" prefWidth="972.0">
+        <columns>
+          <TableColumn fx:id="code_col" prefWidth="39.0" text="Code" />
+          <TableColumn fx:id="name_col" prefWidth="159.0" text="Product Name" />
+            <TableColumn fx:id="date_col" prefWidth="103.0" text="Date" />
+            <TableColumn fx:id="salePrice_col" minWidth="0.0" prefWidth="91.0" text="Sale Price" />
+            <TableColumn fx:id="purchase_col" minWidth="0.0" prefWidth="101.0" text="Purchase Price" />
+            <TableColumn fx:id="items_col" minWidth="0.0" prefWidth="82.0" text="Items" />
+            <TableColumn fx:id="cashDis_col" minWidth="0.0" prefWidth="84.0" text="Cash Discount" />
+            <TableColumn fx:id="percent_col" minWidth="0.0" prefWidth="113.0" text="\% Discount" />
+            <TableColumn fx:id="total_col" minWidth="0.0" prefWidth="118.0" text="Total" />
+            <TableColumn fx:id="invoice_col" minWidth="0.0" prefWidth="81.0" text="Invoice No" />
+        </columns>
+      </TableView>
+      <Label fx:id="grandTotalCountLabel" layoutX="819.0" layoutY="607.0" text="Grand Total Amount : 0.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="entryCountLabel" layoutX="88.0" layoutY="607.0" text="Total Entry: 0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
